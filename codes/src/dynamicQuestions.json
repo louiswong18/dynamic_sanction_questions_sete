@@ -1,0 +1,1696 @@
+[
+	{
+		"questionId": "e50",
+		"question": "When was this exposure identified?",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "date_MM_YYYY"
+		},
+		"dependentOn": {
+			"questionId": [
+				"e1",
+				"e49"
+			]
+		}
+	},
+	{
+		"questionId": "e20",
+		"question": "Have you reviewed external sources to understand the full Sanctions Exposure?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType2": {
+						"notEquals": "Import/Export"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e21",
+		"question": "Please provide an overview of the external sources checked and whether this contradicted what was previously known or confirmed the Sanctions Exposure; or please document why external sources were not checked",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType2": {
+						"notEquals": "Import/Export"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e69",
+		"question": "Please select exposure type",
+		"answerOptions": [
+			"Direct",
+			"Indirect"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType2": {
+						"equals": "Conducts"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e71",
+		"question": "Please provide an overview of how the percentage of exposure was calculated, including method (eg. via customer website, annual report, customer call, etc) and factor (eg. as a percentage of sales, expenditure, assets, etc)",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"questionId": "e69",
+			"answer": {
+				"equals": "Indirect"
+			}
+		}
+	},
+	{
+		"questionId": "e11",
+		"question": "Please insert the annual percentage contribution derived from this activity relative to the total revenue/saleas/assets",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "number",
+			"format": "percentage",
+			"decimalPlaces": 3,
+			"min": 0.01,
+			"max": 100
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType2": {
+						"equals": "Conducts"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e11.1",
+		"question": "Pease advise the annual USD value contribution derived from this activity relative to the total revenue/sales/assets",
+		"answerOptions": "",
+		"answerType": {
+			"type": "number",
+			"decimalPlaces": 3,
+			"min": 0.01
+		},
+		"isRequired": false,
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType2": {
+						"equals": "Conducts"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e2",
+		"question": "Will HSBC products and services be used to facilitate this activity?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"or": [
+						{
+							"sanctionExposureSubType2": {
+								"equals": "Conducts"
+							}
+						},
+						{
+							"sanctionExposureSubType2": {
+								"equals": "Import/Export"
+							}
+						}
+					]
+				}
+			]
+		}	
+	},
+	{
+		"questionId": "e3",
+		"question": "Please provide an overview of this activity including the purpose and nature of this activity and which banks or third parties (eg. individuals, suppliers, agents, brokers, and distributors) will be involved in facilitating this activity",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType2": {
+						"equals": "Conducts"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e25",
+		"question": "Name of the Party(ies) business is being conducted with",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 1000
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType2": {
+						"equals": "Conducts"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e22",
+		"question": "Please select the applicable type of presence",
+		"answerOptions": [
+			"Residency",
+			"Registration Address",
+			"Business Address",
+			"Correspondence Address",
+			"Principal place of operations"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType2": {
+						"equals": "Presence"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e23",
+		"question": "Please insert the rationale for having this presence in this activitiy",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType2": {
+						"equals": "Presence"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e4",
+		"question": "Are these transactions processed under a Transaction Sanctions Risk Approval (TSRA)?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"questionId": "e2",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e72.1",
+		"question": "Please provide: (a) the products and accounts used and where these are located",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 1000
+		},
+		"dependentOn": {
+			"questionId": "e2",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e72.2",
+		"question": "(b) currency",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 1000
+		},
+		"dependentOn": {
+			"questionId": "e2",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e72.3",
+		"question": "(c) any counterparties involved with this activity",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 1000
+		},
+		"dependentOn": {
+			"questionId": "e2",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e72.4",
+		"question": "(d) frequency of payments",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 1000
+		},
+		"dependentOn": {
+			"questionId": "e2",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e72.5",
+		"question": "(e) number of the payments and",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 1000
+		},
+		"dependentOn": {
+			"questionId": "e2",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e72.6",
+		"question": "(f) payment values",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 1000
+		},
+		"dependentOn": {
+			"questionId": "e2",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e5",
+		"question": "Has it been confirmed through the attestation on the SEQ form or through an Attestation letter that these transactions will not be processed though HSBC?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"questionId": "e2",
+			"answer": {
+				"equals": "No"
+			}
+		}
+	},
+	{
+		"questionId": "e73",
+		"question": "Please provide details of who is providing financial services and how the activity is ring-fenced from HSBC products and services",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"questionId": "e2",
+			"answer": {
+				"equals": "No"
+			}
+		}
+	},
+	{
+		"questionId": "e6",
+		"question": "Please provide the date this attestation was provided",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "date_MM_DD_YYYY"
+		},
+		"dependentOn": {
+			"questionId": "e5",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e7",
+		"question": "What is the relationship of the Customers Connected Party?",
+		"answerOptions": [
+			"UBO",
+			"Director",
+			"Shareholdere",
+			"Branch",
+			"Subsidiary",
+			"Joint Venture",
+			"Holding Company",
+			"Affiliate",
+			"Other"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType3": {
+						"equals": "Connected Party"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e8",
+		"question": "If Other",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 100
+		},
+		"dependentOn": {
+			"questionId": "e7",
+			"answer": {
+				"equals": "Other"
+			}
+		}
+	},
+	{
+		"questionId": "e17",
+		"question": "Please provide the name of the Connected Party",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 200
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType3": {
+						"equals": "Connected Party"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e7.1",
+		"question": "What is the relationship of the Entity in Customer Group?",
+		"answerOptions": [
+			"Branch",
+			"Subsidiary",
+			"Joint Venture",
+			"Holding Company",
+			"Affiliate",
+			"Other"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType3": {
+						"equals": "Entity within Customer Group"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e8.1",
+		"question": "If Other",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"questionId": "e7.1",
+			"answer": {
+				"equals": "Other"
+			}
+		}
+	},
+	{
+		"questionId": "e17.1",
+		"question": "Please provide the name of the Entity in Customer Group?",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 200
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType3": {
+						"equals": "Entity within Customer Group"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e17.2",
+		"question": "Please provide the name of the other Customer",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"questionId": "e7.1",
+			"answer": {
+				"equals": "Other"
+			}
+		}
+	},
+	{
+		"questionId": "e18",
+		"question": "Is the Entity in Customer Group banked by HSBC?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType3": {
+						"equals": "Entity within Customer Group"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e32",
+		"question": "Please provide details of relationship, eg. where Entity in Customer Group is banked",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"questionId": "e18",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e68",
+		"question": "Please indicate relvant geography",
+		"answerOptions": [
+			"Belarus",
+			"Cuba",
+			"Iran",
+			"North Korea",
+			"Syria",
+			"Russia",
+			"Crimea",
+			"Region",
+			"DNR",
+			"LNR",
+			"Venezuela"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "combo_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType2": {
+						"equals": "Is Owned"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e26",
+		"question": "Name of the individuals, entities, governments or organisations owned, controlled or acting on behalf of",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 1000
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType2": {
+						"equals": "Is Owned"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e27",
+		"question": "Do the individuals, entities, governments or organisations have any owership?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType2": {
+						"equals": "Is Owned"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e28",
+		"question": "Please provide the % of ownership",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "number",
+			"format": "percentage",
+			"decimalPlaces": 3,
+			"min": 0.01,
+			"max": 100
+		},
+		"dependentOn": {
+			"questionId": "e27",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e9",
+		"question": "Has the Connected Party received/sent transactions to/from our customer in the past 5 years, or intend to receive/send transations in the future?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType3": {
+						"equals": "Connected Party"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e9.1",
+		"question": "Has the Entity in Customer Group received/sent transactions to/from our Customer in the past 5 years, or intend to receive/send transactions in the future?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType3": {
+						"equals": "Entity within Customer Group"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e9.2",
+		"question": "Has the individual/Entity received/sent transactions to/from our customer in the past 5 years, or intend to receive/send transactions in the future?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType2": {
+						"equals": "Is Owned"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e34",
+		"question": "Are dividends paid to the ownership parties?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"or": [
+						{
+							"questionId": "e9",
+							"answer": {
+								"equals": "Yes"
+							}
+						},
+						{
+							"questionId": "e9.2",
+							"answer": {
+								"equals": "Yes"
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e35",
+		"question": "Please provide details",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"questionId": "e34",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e36",
+		"question": "Does the Customer receive funding from this party, in the form of capital, cash injection, equity or inter-company loans?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"or": [
+						{
+							"questionId": "e9",
+							"answer": {
+								"equals": "Yes"
+							}
+						},
+						{
+							"questionId": "e9.2",
+							"answer": {
+								"equals": "Yes"
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e37",
+		"question": "Please provide details",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"questionId": "e36",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e10",
+		"question": "Will/Have HSBC products and services be / been used to facilitate this activity with the Customers Connected Party?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"questionId": "e9",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e10.1",
+		"question": "Will/Have HSBC products and services be / been used to facilitate this activity with the Entity in Customer Group?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"questionId": "e9.1",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e10.2",
+		"question": "Will/Have HSBC products and services be / been used to facilitate this activity?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"questionId": "e9.2",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e29",
+		"question": "Do the individuals, entities, governments or organisations exert any significant control over the customer or are they acting on behalf of individuals, entities, governments, or organisations located in Belarus, Cuba, Iran, North Korea, Russia, Syria, Non-Ukrainian Governmental Controlled Areas of Ukraine?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"or": [
+						{
+							"questionId": "e27",
+							"answer": {
+								"equals": "No"
+							}
+						},
+						{
+							"questionId": "e10.2",
+							"answer": {
+								"equals": "No"
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e30",
+		"question": "Please provide details",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"questionId": "e29",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e12",
+		"question": "Where the Customer has provided an Attestation please attach so that this may also be reviewed by FCC Sanctions",
+		"answerType": "attachment",
+		"isRequired": false,
+		"dependentOn": {
+			"questionId": "e5",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e15",
+		"question": "Does the Connected Party have any ownership over the Customer?",
+		"answerOptions": [
+			"Yes",
+			"No",
+			"N/A"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType3": {
+						"equals": "Connected Party"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e16",
+		"question": "Percentage of ownership",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "number",
+			"format": "percentage",
+			"decimalPlaces": 3,
+			"min": 0.01,
+			"max": 100
+		},
+		"dependentOn": {
+			"questionId": "e15",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e19",
+		"question": "Does the Connected Party have any control over the Customer?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"questionId": "e15",
+			"answer": {
+				"equals": "No"
+			}
+		}
+	},
+	{
+		"questionId": "e33",
+		"question": "Please provide details",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"questionId": "e19",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e24",
+		"question": "Name of Sanctioned Party",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 1000
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType1": {
+						"equals": "Sanctioned Party"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e14",
+		"question": "Please click on 'Add' button to add the Sanctions exposure, else entries will be lost.",
+		"answerOptions": [],
+		"isRequired": false,
+		"answerType": {
+			"type": "button"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": "e1"
+				},
+				{
+					"questionId": "e49"
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e48",
+		"question": "Please provide the name of the Government of Afghanistan entity",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 1000
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": "e1"
+				},
+				{
+					"questionId": "e49"
+				},
+				{
+					"sanctionExposureSubType1": {
+						"equals": "Afghanistan"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e70",
+		"question": "Please provide the name of the Government of Venezuela entity or entity owned, controlled or acting on behalf of the Gpvernment of Venezuela?",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 1000
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType1": {
+						"equals": "Venezuela"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e51",
+		"question": "Does the activity relate to import/sourcing or export/supply of goods, services, software or technology from/to Russia, or provision of technical assistance, brokering services or other services in relation to import/exports to Russia?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType1": {
+						"equals": "Russia"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e52",
+		"question": "Please provide details of goods, services, software or technology including lastest available volume/value figures",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"questionId": "e51",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e74",
+		"question": "Have you included details of the applicable export controls licence or import authorisation on the licence tab?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"questionId": "e51",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e75",
+		"question": "Pease provide details",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"questionId": "e74",
+			"answer": {
+				"equals": "No"
+			}
+		}
+	},
+	{
+		"questionId": "e53",
+		"question": "Does the activity relate to undertaking any New Investment in Russia or any New investment undertaken in Russia after 24th February 2022?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType1": {
+						"equals": "Russia"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e54",
+		"question": "Please provide details of any actitvites constituting New Investment",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"questionId": "e53",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e55",
+		"question": "Does the activity relate to the provision of financial products, assistance or services (including loans, buyer/supplier credits, import/export advances, guarantees, suretuships, bonds, letters of credit, insurance, securities custody servies, correspondent banking, payments or money transfer services, etc into Russia or to a Russian incorporated or domiciled company, including entities owned more than 50% by , or acting on behalf of or at the direction of, such companies, wherever located?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType1": {
+						"equals": "Russia"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e56",
+		"question": "Please provide details",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"questionId": "e55",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e57",
+		"question": "Does the activity relate to the provision of professional services such as but not limited to; accounting, auditing, trust administration, management or trustee services (including acting as trustee), corporate formation services, business/management consulting, tax consulting, public relations services professional, market research and public opionion polling services, technical testing and analysis services or and advertising services into Russia or to Russian residents or nationals wherever located (including Russian Trusts, Settlors or Benficiaries) or Russian incorporated or domiciled companies, including entities owned more than 50% by, or acting on behalf of or at the direction of, such companies, wherever located?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType1": {
+						"equals": "Russia"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e58",
+		"question": "Please provide details",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"questionId": "e57",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e59",
+		"question": "Base on geographic segmental analysis, is Russia one of the top three countries for business activities?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType1": {
+						"equals": "Russia"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e60",
+		"question": "Please provide basis of segmental analysis",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"questionId": "e59",
+			"answer": {
+				"equals": "Yes"
+			}
+		}
+	},
+	{
+		"questionId": "e61",
+		"question": "What are the plans of the Russia-related business activities?",
+		"answerOptions": [
+			"Exit/Wind-down within 12 months",
+			"Exit/Wind-down more than 12 months",
+			"Maintain current activitiy levels (no growth or expansion plans)",
+			"Plans to grow or make new investments"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType1": {
+						"equals": "Russia"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e62",
+		"question": "Please provide details if plans, including dates",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"or": [
+						{
+							"questionId": "e61",
+							"answer": {
+								"equals": "Exit/Wind-down more than 12 months"
+							}
+						},
+						{
+							"questionId": "e61",
+							"answer": {
+								"equals": "Maintain current activitiy levels (no growth or expansion plans)"
+							}
+						},
+						{
+							"questionId": "e61",
+							"answer": {
+								"equals": "Plans to grow or make new investments"
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e63",
+		"question": "Does the activity relate to import or export?",
+		"answerOptions": [
+			"Import",
+			"Export"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType2": {
+						"equals": "Import/Export"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e64",
+		"question": "Please provide a high level oveview of the items or services subject to import/export controls restrictions",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType2": {
+						"equals": "Import/Export"
+					}
+				}
+			]
+		}
+	},
+	{
+		"questionId": "e65",
+		"question": "Please provide an overview of the intended purpose (end-use) and the recipients (end-users) of the items or services",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"questionId": "e63",
+			"answer": {
+				"equals": "Export"
+			}
+		}
+	},
+	{
+		"questionId": "e66",
+		"question": "Please provide an overview of the countr(ies) of transport and ultimate destination?",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"questionId": "e63",
+			"answer": {
+				"equals": "Export"
+			}
+		}
+	},
+	{
+		"questionId": "e67",
+		"question": "Please provide an overview of the countr(ies) of origin and transport?",
+		"answerOptions": "",
+		"isRequired": false,
+		"answerType": {
+			"type": "string",
+			"maxLength": 5000
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType2": {
+						"equals": "Import/Export"
+					}
+				}
+			]
+		}
+	}
+]

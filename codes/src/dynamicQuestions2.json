@@ -1,0 +1,29 @@
+[
+	{
+		"questionId": "e0",
+		"question": "Please select exposure type",
+		"answerOptions": [
+			"Direct",
+			"Indirect"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"sanctionExposureSubType2": {
+						"equals": "Conducts"
+					}
+				}
+			]
+		}
+	}
+]

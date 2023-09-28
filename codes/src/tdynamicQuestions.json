@@ -1,0 +1,38 @@
+[
+	{
+		"questionId": "e2",
+		"question": "Will HSBC products and services be used to facilitate this activity?",
+		"answerOptions": [
+			"Yes",
+			"No"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "multiple_choice"
+		},
+		"dependentOn": {
+			"and": [
+				{
+					"questionId": [
+						"e1",
+						"e49"
+					]
+				},
+				{
+					"or": [
+						{
+							"sanctionExposureSubType2": {
+								"equals": "Conducts"
+							}
+						},
+						{
+							"sanctionExposureSubType2": {
+								"equals": "Import/Export"
+							}
+						}
+					]
+				}
+			]
+		}	
+	}
+]

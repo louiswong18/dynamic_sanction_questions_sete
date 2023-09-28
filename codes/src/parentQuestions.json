@@ -1,0 +1,67 @@
+[
+	{
+		"questionId": "e1",
+		"question": "What exposure has been identified?",
+		"answerOptions": [
+			"Conducts business involving the Government of Afghanistan",
+			"Conducts business involving Belarus",
+			"Conducts business involving Cuba",
+			"Conducts business involving Iran",
+			"Conducts business involving North Korea",
+			"Conducts business involving Russia",
+			"Conducts business involving Syria",
+			"Conducts business with the Venezuela Government or entity owned, controlled or acting on behalf of the Venezuela Government",
+			"Conducts Business involving the Non-Ukrainlan Governmental Controlled Areas of Ukraine",
+			"Conducts business with a Sanctioned Party or entity owned or controlled by a Sanctioned Party",
+			"Conducts business requiring an Import Authorization/Export License",
+			"Has a presence in Belarus",
+			"Has a presence in Cuba",
+			"Has a presence in Iran",
+			"Has a presence in North Korea",
+			"Has a presence in Russia",
+			"Has a presence in Syria",
+			"Has a presence in the Non-Ukrainian Governmental Controlled Areas of Ukraine",
+			"Has a presence in DNR",
+			"Has a presence in LNR",
+			"Is the Government of Afghanistan",
+			"Is a Sanctioned Party",
+			"Is owned, controlled or acting on behalf of a Sanctioned party",
+			"Is owned, controlled or acting on behalf of Individuals, entities, governments or organisations located in Belarus, Cuba, Iran, North Korea, Russia, Syria, the Non-Ukanian Governmental Controlled Areas of Ukraine",
+			"Is owned, controlled or acting on behalf of the Venezuela Government"
+		],
+		"isRequired": true,
+		"answerType": {
+			"type": "combo_choice"
+		  }
+	},
+	{
+		"questionId": "e49",
+		"question": "Exposure relates to",
+		"answerOptions": [
+			"Customer",
+			"Connected Party",
+			"Entity within Customer Group"
+		],
+		"isRequired": false,
+		"answerType": {
+			"type": "combo_choice"
+		  },
+		"dependentOn": {
+			"questionId": "e1"
+		}
+	},
+	{
+		"questionId": "e13",
+		"question": "Add Sanctions Exposure",
+		"isRequired": false,
+		"answerType": {
+			"type": "button"
+		  },
+		"dependentOn": {
+			"questionId": [
+				"e1",
+				"e49"
+			]
+		}
+	}
+]

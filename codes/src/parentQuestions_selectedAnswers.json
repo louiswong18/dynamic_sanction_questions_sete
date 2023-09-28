@@ -1,0 +1,712 @@
+[
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving the Government of Afghanistan",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Afghanistan",
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving the Government of Afghanistan",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Afghanistan",
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving the Government of Afghanistan",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Afghanistan",
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving Belarus",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving Belarus",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving Belarus",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving Cuba",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving Cuba",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving Cuba",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving Iran",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving Iran",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving Iran",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving North Korea",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving North Korea",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving North Korea",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving Russia",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Russia",
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving Russia",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Russia",
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving Russia",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Russia",
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving Syria",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving Syria",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business involving Syria",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business with the Venezuela Government or entity owned, controlled or acting on behalf of the Venezuela Government",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Venezuela",
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business with the Venezuela Government or entity owned, controlled or acting on behalf of the Venezuela Government",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Venezuela",
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business with the Venezuela Government or entity owned, controlled or acting on behalf of the Venezuela Government",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Venezuela",
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts Business involving the Non-Ukrainlan Governmental Controlled Areas of Ukraine",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts Business involving the Non-Ukrainlan Governmental Controlled Areas of Ukraine",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts Business involving the Non-Ukrainlan Governmental Controlled Areas of Ukraine",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business with a Sanctioned Party or entity owned or controlled by a Sanctioned Party",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Sanctioned Party",
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business with a Sanctioned Party or entity owned or controlled by a Sanctioned Party",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Sanctioned Party",
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business with a Sanctioned Party or entity owned or controlled by a Sanctioned Party",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Sanctioned Party",
+		"sanctionExposureSubType2": "Conducts",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business requiring an Import Authorization/Export License",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "Non-CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Import/Export",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Conducts business requiring an Import Authorization/Export License",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "Non-CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Import/Export",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in Belarus",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in Belarus",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in Belarus",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in Cuba",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in Cuba",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in Cuba",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in Iran",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in Iran",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in Iran",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in North Korea",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in North Korea",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in North Korea",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in Russia",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in Russia",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in Russia",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in Syria",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in Syria",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in Syria",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in the Non-Ukrainian Governmental Controlled Areas of Ukraine",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in the Non-Ukrainian Governmental Controlled Areas of Ukraine",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in the Non-Ukrainian Governmental Controlled Areas of Ukraine",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in DNR",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in DNR",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in DNR",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in LNR",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in LNR",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Has a presence in LNR",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Presence",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Is the Government of Afghanistan",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Afghanistan",
+		"sanctionExposureSubType2": null,
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Is the Government of Afghanistan",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Afghanistan",
+		"sanctionExposureSubType2": null,
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Is the Government of Afghanistan",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Afghanistan",
+		"sanctionExposureSubType2": null,
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Is a Sanctioned Party",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Sanctioned Party",
+		"sanctionExposureSubType2": null,
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Is a Sanctioned Party",
+			"e49": "Connected Party"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Sanctioned Party",
+		"sanctionExposureSubType2": null,
+		"sanctionExposureSubType3": "Connected Party"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Is a Sanctioned Party",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Sanctioned Party",
+		"sanctionExposureSubType2": null,
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Is owned, controlled or acting on behalf of a Sanctioned party",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Sanctioned Party",
+		"sanctionExposureSubType2": "Is Owned",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Is owned, controlled or acting on behalf of a Sanctioned party",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": "Sanctioned Party",
+		"sanctionExposureSubType2": "Is Owned",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Is owned, controlled or acting on behalf of Individuals, entities, governments or organisations located in Belarus, Cuba, Iran, North Korea, Russia, Syria, the Non-Ukanian Governmental Controlled Areas of Ukraine",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Is Owned",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Is owned, controlled or acting on behalf of Individuals, entities, governments or organisations located in Belarus, Cuba, Iran, North Korea, Russia, Syria, the Non-Ukanian Governmental Controlled Areas of Ukraine",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Is Owned",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Is owned, controlled or acting on behalf of the Venezuela Government",
+			"e49": "Customer"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Is Owned",
+		"sanctionExposureSubType3": null
+	},
+	{
+		"selectedAnswers": {
+			"e1": "Is owned, controlled or acting on behalf of the Venezuela Government",
+			"e49": "Entity within Customer Group"
+		},
+		"sanctionExposureType": "CSRA",
+		"sanctionExposureSubType1": null,
+		"sanctionExposureSubType2": "Is Owned",
+		"sanctionExposureSubType3": "Entity within Customer Group"
+	}
+]
